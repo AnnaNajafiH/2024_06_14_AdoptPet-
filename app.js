@@ -19,7 +19,7 @@ app.get("/", (req, res) => {
 // Animals route
 app.get("/animals/:pet_type", (req, res) => {
   const { pet_type } = req.params;
-  const animals = pets[pet_type]; //Fetching Data from the pets Object
+  const animals = pets[pet_type]; 
 
   if (!animals) {
     res.send(`<p>No pets of type ${pet_type} found.</p>`);
